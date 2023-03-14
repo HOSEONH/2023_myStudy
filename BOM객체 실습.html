@@ -7,12 +7,24 @@
     <title>Document</title>
 </head>
 <body>
+    <a id="link" href="#">다음으로 연결</a>
+    <form id="form">
+        <label for="">이름</label>
+        <input type="text" id="name">
+    </form>
     <script>
         // confirm() 이용하여 확인을 누르면
         // 현재의 운영체제를 알려주세요
         // navigator
-        let choice = confirm("선택을 해주세요");
-        document.write(`<p>${navigator.platform}</p>`);
+        let choice = confirm("운영체제를 알려드릴까요?");
+        document.write(`<p>${navigator.platform}입니다</p>`);
+
+        // DOM 요소 실습2
+        let link = document.querySelector("#link");
+        url.innerHTML = "https://www.daum.net/";
+
+        let title = document.querySelector(".form .name");
+        title = 
 
     </script>
 </body>
