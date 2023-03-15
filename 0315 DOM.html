@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/0315 css.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="blue-color">클래스가 추가되면 파란색이 됩니다</h2>
+    <script>
+        let h2 = document.querySelector(".blue-color");
+        h2.classList.remove("blue-color"); 
+        h2.classList.add("blue-color", "hi", "hello");
+        h2.classList.toggle("blue-color");
+    </script>
+</body>
+</html>
