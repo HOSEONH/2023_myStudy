@@ -1,0 +1,93 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">수정하기 전 제목입니다</h1>
+    <div>
+        <ul id="ulList">
+            <li>첫번째 내용입니다</li>
+            <li>두번째 내용입니다</li>
+            <li>세번째 내용입니다</li>
+            <li>네번째 내용입니다</li>
+        </ul>
+        <ol id="olList">
+            <li>첫번째 내용입니다</li>
+            <li>두번째 내용입니다</li>
+            <li>세번째 내용입니다</li>
+            <li>네번째 내용입니다</li>
+        </ol>
+    </div>
+    <div class="main">
+        <p><span>빈 공간</span> 입니다</p>
+    </div>
+    <div class="footer">
+        <p>푸터영역입니다</p>
+    </div>
+
+    <script>
+        let title = document.querySelector("#title");
+        console.log(title);
+        
+        // let ulList = document.querySelector("#ulList");
+        // console.log(ulList);
+        // console.dir(ulList);
+
+        // let olList = document.querySelector("#olList");
+        // console.log(olList);
+        // console.dir(olList);
+
+        // let main = document.querySelector(".main");
+        // console.log(main);
+        // console.dir(main);
+
+
+        // h1 태그 수정 
+        let titleElement = document.querySelector("#title"); // 태그이름 그대로 적거나 .을 통해 접근
+        titleElement.innerHTML = "DOM 이용한 수정";
+        titleElement.style.color="blue";
+        titleElement.style.backgroundColor="rgb(228, 228, 228)";
+
+        // ul 첫번째 li 제거
+        let ul = document.querySelector("ul");
+        ul.removeChild(ul.firstElementChild);
+
+        // ul 추가 노드요소
+        let ulList = document.createElement("li"); 
+
+
+        //  ol 수정
+        let listLi = document.querySelectorAll("#olList>li");
+        console.log(listLi);
+
+        listLi[0].innerHTML = "내용을 바꾸었습니다"
+        listLi[1].innerHTML = "세번째 내용입니다"
+        
+        // let ol = document.querySelector("ul");
+        // ul.removeChild(ul.firstElementChild);
+
+        listLi[2].removeChild(ol.firstElementChild);
+        listLi[3].removeChild(ol.firstElementChild);
+
+
+        // let ol = document.querySelector("ol");
+        // ol.removeChild(ul.firstElementChild);
+
+
+
+        // 빈공간 복제와 색 변경
+
+
+        
+        // let mainBlnak = document.querySelector(".main");
+        // let mainCopy = main.cloneNode(true);
+        // div.appendChild(mainCopy);
+
+        
+        // ul.removeChild(ul.firstElementChild);
+        // ul.remove();
+    </script>
+</body>
+</html>

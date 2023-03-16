@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input onfocuse="inputFocuse()" onblur="inputBlur()" id="inP" type="text" value="">
+    <button value="확인">확인</button>
+    <script>
+        let input = document.getElementById('#inP');
+        function inputFocuse() {
+            if(input.value == ''){
+                input.value.style.backgroundColor = gray;
+                input.value.textContent = "포커스가 잡혀있습니다.";
+            };
+            // input.value.style.backgroundColor = gray;
+        }
+    </script>
+</body>
+</html>

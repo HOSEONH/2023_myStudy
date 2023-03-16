@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        3. 생성자 함수를 이용한 객체 생성
+        1) 생성자 함수 function Product () {}는
+        * 속성 : name, pay
+        * 메소드 : keep () {“name을 보관했습니다” 문자열return}
+        	getPay() { pay 의 숫자값을 return }
+        * 객체 생성 : ①"book" 6000, ②"pencil", 2000, ③"hat" : 8000
+        */
+        function Product (name, pay) {
+            this.name = name;
+            this.pay = pay;
+            this.keep = function(Product) {
+                return `${name}을 보관했습니다`;
+            }
+            this.getPay = function() {
+                return `${pay}`;
+            }
+        }
+        let myBook = new Product ("book", 6000 );
+        let myPencil = new Product ("pencil", 2000 );
+        
+
+
+        /*
+        2) 생성자 함수 function User () {} 은
+        * 속성 : id , money, buyList[](배열)
+        * 메소드 : charge ( plusMoney ) {  }
+        	buy ( product객체 ) 
+        	{  객체의 money에서 product.getPay()을 통해 값을 빼고 남은 money를 할당
+        	   product.name을 buyList배열의 메소드 push()를 사용해서 추가	 }
+        * 객체 생성 : harry, 10000
+        */
+       
+            function User (id,money) {
+                this.id = id;
+                this.money = money;
+                this.buylist = [];
+                this.charge(plusMoney) {
+                    this.money += plusMoney;
+                }
+                /*this.buy() {
+                    money-product.getPat()
+                    this.buyList.push()
+                    product.name
+                }*/
+            } 
+            let myUser = new User("harry", 10000);
+
+            
+    </script>
+</body>
+</html>
