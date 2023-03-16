@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/onfocus 실습 응용.css">
+</head>
+<body>
+        <!-- input태그에 onfouse, onblur -->
+        <input type="text" id="input-text">
+        <button id="btn">확인</button>
+    <script>
+        const userInput = document.getElementById('input-text');
+        const userBtn = document.getElementById('btn');
+        // 코드 => 인풋 이벤트 핸들러
+        let inputTextValueHandle = () => {
+            if (userInput.value == '') {
+                userInput.style.backgroundColor = '#ffa7d5';
+                userInput.value = '포커스가 잡혀있습니다.';
+            }  else if (userInput.value == '포커스가 잡혀있습니다.') {
+                userInput.style.backgroundColor = '#c2d775';
+                userInput.style.color = 'white';
+                userInput.value = '';
+            }
+        };
+        // 응용 => 옆에 있는 버튼 이벤트 핸들러
+        let changeColorHandle = () => {
+            if (userInput.value == '') {
+                userBtn.style.backgroundColor = '#9aeef0';
+            } else if (userInput.value == '포커스가 잡혀있습니다.') {
+                userBtn.style.backgroundColor = '#c293e7';
+            }
+            userBtn.style.color = 'white';
+        }
+        userInput.addEventListener('focus', inputTextValueHandle);
+        userInput.addEventListener('blur', inputTextValueHandle);
+        userBtn.addEventListener('click', inputTextValueHandle);
+        userBtn.addEventListener('click', changeColorHandle);
+        
+    </script>
+</body>
+</html>

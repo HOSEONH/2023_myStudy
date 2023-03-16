@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="printTest()" id="btn2" value="안녕">안녕</button>
+    <script>
+        const btn2 = document.getElementById('btn2');
+        function printTest(){
+            btn2.innerHTML = '글자 바뀜';
+        }
+        btn2.addEventListener('click', printTest);
+
+        // 로직
+        // btn2변수 만들어도 되고 그냥 도큐멘트로 써도됨
+        // 버튼을 클릭했을 때니까 먼저 이벤트 생성함
+        // 버튼 클릭했을 때 함수(코드)를 실행시켜줘
+        // 실행시킬 코드 만들면 됨
+    </script>
+</body>
+</html>
