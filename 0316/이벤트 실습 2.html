@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(실습) 체크박스 이벤트 색 변경</title>
+</head>
+<body>
+    <ol>
+        <li id="first_list">
+            <input type="checkbox" name="" id="checkbox">
+            첫번째 리스트입니다.</li>
+    </ol>
+    <!-- 체크박스를 클릭했을 때,checked가 true라면 글자의 색이 회색으로 바뀌고
+    checked가 false라면 글자의 색을 검정으로 바꾸세요. -->
+        <script>
+            const list = document.getElementById('#first_list');
+            list.firstChild = 
+            const check = document.getElementById('#checkbox');
+            check.addEventListener("click", function(e){
+                if(e.target.checked == true){
+                    list.style.color = "gray";
+                }
+                else {
+                    list.style.color = "black";
+                }
+            })
+
+            userInput.addEventListener('focus', inputTextValueHandle);
+        userInput.addEventListener('blur', inputTextValueHandle);
+        userBtn.addEventListener('click', inputTextValueHandle);
+        userBtn.addEventListener('click', changeColorHandle);
+
+            //checkbox누른게 사실이라면 회색 
+        </script>
+</body>
+</html>
