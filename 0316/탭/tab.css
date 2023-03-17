@@ -1,0 +1,64 @@
+* { margin: 0; padding: 0; font-family: 'KCC-Ganpan';}
+ul { list-style: none; }
+a { text-decoration: none; color: gray;}
+
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    margin: 60px;
+}
+
+.list {
+    display: flex;
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    background-color: aquamarine;
+    margin: 10px;
+}
+
+.list li{
+    width: 200px;
+    height: 10px;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+h5 {
+    padding-top: 20px;
+    font-size: 3rem;
+}
+
+.container .list li.on .btn {
+    color: rgb(128, 128, 128);
+    background-color: rgb(173, 208, 231);
+    width: 300px;
+    transition: 1s;
+}
+
+.container .list li .content {
+    display: none;
+    position: absolute;
+    left: 0; /* 지금은 tab하나만 구현이라 사용 */
+    margin-left: 10px; /* 감싸고 있는 margin값 추가 */
+    width: 500px;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgb(238, 174, 174);
+}
+
+.container .list li.on .content {
+    display: block;
+}
+
+.content {
+    width: 300px;
+    margin: auto;
+}
