@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./색 클릭.css">
+</head>
+<body>
+    <ul>
+        <li><a href="#" onclick="changeColorAndBackground('green')">Green</a></li>
+        <li><a href="#" onclick="changeColorAndBackground('orange')">Orange</a></li>
+        <li><a href="#" onclick="changeColorAndBackground('purple')">Purple</a></li>
+    </ul>
+    <div id="result"></div>
+    <script>
+        let result = document.getElementById('result');
+        function changeColorAndBackground (color) {
+            result.style.backgroundColor = color;
+        }
+
+
+        // let ulList = document.querySelectorAll('ul');
+        // // .firstElementChild;
+        // // let first = ulList.firstChild;
+        // let result = document.querySelector('#result');
+        
+        // function changeColorAndBackground(color) {
+        //     //first.style.color = color;
+        //     ulList[i].style.color = color;
+        //     result.style.backgroundColor = color;
+        // }
+    </script>
+</body>
+</html>
