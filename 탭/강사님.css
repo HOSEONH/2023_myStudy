@@ -2,18 +2,12 @@
 * { margin: 0; padding: 0;}
 ul { list-style: none; }
 a { text-decoration: none; color: black; }
-@font-face{
-    font-family:'bitbit';
-    src:url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff'),url('//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2') ;
-    }
 
 /* tap_menu */
-.tab_menu, h1{
-    font-family:'bitbit';
+.tab_menu{
     margin: 10px;
-    border: solid 1px black;
-
 }
+
 
 /* tap_menu의 list의 li들을 나열*/
 .tab_menu .list {
@@ -26,14 +20,14 @@ a { text-decoration: none; color: black; }
 .tab_menu .list li .btn {
     padding: 0px 5px;
     font-size: 1.2rem;
-    border: solid 1px black;
-
 }
 /* a버튼을 눌렀을때 디자인*/ 
 .tab_menu .list li.on .btn {
-    color: #4b4b4b;
-    background-color: #F7C8E0;
+    color: green;
+    background-color: yellowgreen;
 }
+
+
 
 /* contents */
 .tab_menu .list li .content {
@@ -45,9 +39,7 @@ a { text-decoration: none; color: black; }
     height: 150px;
     box-sizing: border-box;
     padding: 10px;
-    background-color: #DFFFD8;
-    border: solid 1px black;
-
+    background-color: gray;
 }
 /* 버튼을 눌렀을때 보이는 화면 */
 .tab_menu .list li.on .content {

@@ -5,11 +5,10 @@
 // a태그 3개 > 배열
 const btnList = document.querySelectorAll(".list .btn");
 console.log(btnList);
-// tab
 
 // 버튼 중 하나를 선택해서 이벤트 추가
 for(let i=0;i<btnList.length;i++) {
-    btnList[i].addEventListener("click", onTap);
+    btnList[i].addEventListener("click",onTap);
 }
 
 
@@ -29,4 +28,4 @@ function onTap(e) {
     // 이벤트를 붙여준 btnList[0],btnList[1],btnList[2] 중 하나
     e.target.parentNode.classList.add("on");
     console.log(e.target)
-    }
+}
