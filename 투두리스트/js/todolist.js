@@ -18,7 +18,30 @@ function todoAdd(e) {
     li.appendChild(text);
     li.appendChild(time);
     li.appendChild(button);
+
     document.querySelector("#todo-list").appendChild(li);
+    todoForm.firstElementChild.value = "";
+    check.addEventListener("click", todoCheck);
+    button.addEventListener("click", todoDelete);
+}
+function todoCheck(e) {
+    const check = e.target;
+    const li = check.parentNode;
+
+    // 이 부분 다시 보여달라고 하기 !! if말고 어떤 걸로 했는지 
+    if(check.checked){
+        li.style.color = "gray";
+        li.style.textDecoration = "line-through";
+    } else {
+        li.style.color = "";
+        li.style.textDecoration = "";
+    }
+}
+
+function todoDelete(e) {
+    let button = e.target;
+    let li = button.parentNode;
+    li.remove("check");
 }
 function getClock() {
     let date = new Date(); 
