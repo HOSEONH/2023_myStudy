@@ -1,0 +1,52 @@
+.slider {
+    display: flex;
+    flex-wrap: nowrap; 
+    /* 여기 1111 */
+    width: 100%;
+    overflow: hidden;
+    /* position: relative; */
+    /*  position: relative; 밑에 두 개는 없으면 실행안되서 일단 
+    알겠는데 얘는 빼도 있어도 아무런 효과가 안보이는데
+    무슨 역할인지 궁금해요 */
+}
+
+.slider-item {
+    width: 100%;
+    height: 100vh;
+    flex-shrink: 0; 
+    /* 여기1111랑   flex-wrap: nowrap;  flex-shrink: 0; 이렇게가 지금 같이 쓰여지는 형태인건가요? 써줄때 같이 써야하는건지??*/
+    left: 0;
+    /* 자동으로 아이템 너비가 축소되지 않도록 하려면 반드시 "flex-shrink: 0;"을 아이템에 선언해야 합니다. */
+    transition: all 0.5s;
+    position: relative;
+    /* position: relative; 이게 여기 들어가는 이유? */
+}
+
+.slider-button {
+    position: absolute;
+    top: 40%;
+    font-size: 5rem;
+    /* position: absolute; 가 .slider-item 에서 position: relative;안에서 놀으라고 들어간건지.?*/
+}
+
+.next {
+    right: 10px;
+}
+.prev {
+    left: 10px;
+}
+
+
+/* 이미지 */
+.slider-item:nth-child(1) {
+    background-image: url(../img/cat.jpg);
+    background-size: cover;
+}
+.slider-item:nth-child(2) {
+    background-image: url(../img/kid.jpg);
+    background-size: cover;
+}
+.slider-item:nth-child(3) {
+    background-image: url(../img/people.jpg);
+    background-size: cover;
+}

@@ -39,14 +39,14 @@
 /* 슬라이더 이미지 */
 .slider>.slider-item:nth-child(1) {
     background-color: bisque;
-    background-image: url(../img/0.jpg);
+    background-image: url(../img/people.jpg);
     background-size: cover;
 }
 .slider>.slider-item:nth-child(2) {
-    background-image: url(../img/1.jpg);
+    background-image: url(../img/kid.jpg);
     background-size: cover;
 }
 .slider>.slider-item:nth-child(3) {
-    background-image: url(../img/2.jpg);
+    background-image: url(../img/cat.jpg);
     background-size: cover;
 }

@@ -19,6 +19,7 @@ a { color: black; text-decoration: none;}
 }
 .nav-menu {
     display: flex;
+    
 }
 .nav-menu li {
     margin: 35px 20px;

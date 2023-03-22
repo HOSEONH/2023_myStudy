@@ -18,7 +18,4 @@ window.addEventListener("scroll", function(){
         // scrollY가 200 미만이면 scrollon 제거
         nav.classList.remove("scrollon");
     }
-
-
-
 } )
